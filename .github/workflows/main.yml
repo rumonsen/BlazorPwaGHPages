@@ -23,7 +23,7 @@ jobs:
       # Using the -c (--configuration) argument, you can tell to build the project using the Release configuration
       # Using the -o (--output) argument, you can specify where to put the published files. Tell dotnet to publish the project to the release folder
     - name: Publish .NET Core Project
-      run: dotnet publish BlazorPwaGHPages.csproj -c Release -o release --nologo
+      run: dotnet publish BlazorWasmWithPwaTest.csproj -c Release -o release --nologo
       
       # Changes the base-tag in index.html from '/' to 'BlazorPwaGHPages' to match GitHub Pages repository subdirectory
     - name: Change base-tag in index.html from / to BlazorPwaGHPages
